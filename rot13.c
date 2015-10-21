@@ -14,7 +14,7 @@ int main(){
 }
 
 void rot13(char a[], int s, int size){
-    int i, flag, flag1, flag2;
+    int i, flag1, flag2;
     
     for(i = 0; i < size; i++){
       if(a[i] == ' ' || a[i] == '-' || a[i] == '?'){

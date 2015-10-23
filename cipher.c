@@ -17,8 +17,8 @@ int main(){
 }
 
 void substitution_cipher(char a[], int size){
-  int i, j, max, flag, flag1, flag2;
-  char max_c;
+  int i, j, flag, flag1, flag2;
+  
   int t[26] = {0};
   char alphabet[] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
   char al[] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
@@ -33,26 +33,7 @@ void substitution_cipher(char a[], int size){
   }
   
   bubblesort(t, 26, al);
-  /*for(i = 0; i < 26; i++){
-    printf("%c -> %d\n", al[i], t[i]);
-  }*/
-  max = t[25];
-  max_c = al[25];
-  /*for(i = 0; i < size; i++){
-    if(a[i] < 65 || a[i] > 90){
-      continue;
-    }
-    else{
-      if(a[i] >= (65 + flag) && a[i] <= 90){
-        a[i] = (char)((int)a[i] - flag);
-      }
-      else{
-        flag1 = a[i] - 65;
-        flag2 = flag - flag1;
-        a[i] = (char)(91 - flag2);
-      }
-    }
-  }*/
+  
   for(i = 0; i < size; i++){
     switch(a[i]){
       case 'K':

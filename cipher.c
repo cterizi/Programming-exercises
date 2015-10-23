@@ -1,5 +1,4 @@
 #include <stdio.h>
-#define S 1
 void substitution_cipher(char a[], int size);
 int compare(int, int);
 void swap(int *, int *);

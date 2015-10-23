@@ -16,7 +16,7 @@ int main(){
 }
 
 void substitution_cipher(char a[], int size){
-  int i, j, flag, flag1, flag2;
+  int i, j;
   
   int t[26] = {0};
   char alphabet[] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
